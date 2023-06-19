@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@font-face {
+  font-family: "Norse-Bold";
+  src: url("./Fonts/Norse-Bold.otf");
+}
+@font-face {
+  font-family: "Norse";
+  src: url("./Fonts/Norse.otf");
+}
+
+@media screen and (min-width: 1024px) {
+  .top-nav {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+:root {
+  --primary: #f3f3f3;
+  --secondary: #d3d3d3;
+  --headerFooter: #fff;
+  --text: #000000;
+  box-sizing: border-box;
+}
+[data-theme="dark"] {
+  --primary: #1f2123;
+  --secondary: #313537;
+  --headerFooter: #181a1b;
+  --text: #e8e6e3;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.Shop {
+  display: none;
+}
+
+.show {
+  display: flex;
+}
+
+.hide {
+  display: none;
+}
+.main-container {
+  background-color: var(--primary);
+  color: var(--text);
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  transition: background-color 0.25s ease-in;
+}
+
+.shop-container {
+  background-color: var(--primary);
+  color: var(--text);
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: background-color 0.25s ease-in;
+}
+
+.modal-container.show {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  pointer-events: auto;
+  display: flex;
+}
+
+.modal-container.hide {
+  display: none;
+  pointer-events: none;
+}
+
+@media screen and (min-width: 510px) {
+  .modal-container.show {
+    display: none;
+  }
+}
